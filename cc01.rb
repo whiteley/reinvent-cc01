@@ -58,6 +58,7 @@ ARGV.each do |filename|
   item = table.items.create(
     'id' => sha,
     'filename' => filename,
+    'bytes' => obj.content_length,
     'width' => exif.width,
     'height' => exif.height,
     'bits' => exif.bits,
